@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F4F1"
+    tools:context=".SignInActivity">
+
+    <TextView
+        android:id="@+id/tvSingIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/nanum_square_neo_deb"
+        android:text="회원가입"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/guideline14" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.10123119" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <EditText
+        android:id="@+id/etSignInPw"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edit_text_design"
+        android:ems="10"
+        android:fontFamily="@font/nanum_square_neo_brg"
+        android:hint="비밀번호"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="@+id/etSignInEmail"
+        app:layout_constraintStart_toStartOf="@+id/etSignInEmail"
+        app:layout_constraintTop_toBottomOf="@+id/etSignInEmail" />
+
+    <EditText
+        android:id="@+id/etSignInPwCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edit_text_design"
+        android:ems="10"
+        android:fontFamily="@font/nanum_square_neo_brg"
+        android:hint="비밀번호 확인"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="@+id/etSignInPw"
+        app:layout_constraintStart_toStartOf="@+id/etSignInPw"
+        app:layout_constraintTop_toBottomOf="@+id/etSignInPw" />
+
+    <EditText
+        android:id="@+id/etSignInEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edit_text_design"
+        android:ems="10"
+        android:fontFamily="@font/nanum_square_neo_brg"
+        android:hint="이메일"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSignIn"
+        app:layout_constraintEnd_toEndOf="@+id/tvSingIn"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="@+id/tvSingIn"
+        app:layout_constraintTop_toBottomOf="@+id/tvSingIn"
+        app:layout_constraintVertical_bias="0.123" />
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#E0D9C9"
+        android:fontFamily="@font/nanum_square_neo_deb"
+        android:text="가입하기"
+        android:textColor="#3A3730"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline15"
+        app:layout_constraintEnd_toStartOf="@+id/guideline13"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/guideline12" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <EditText
+        android:id="@+id/etSignInNick"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edit_text_design"
+        android:ems="10"
+        android:fontFamily="@font/nanum_square_neo_brg"
+        android:hint="닉네임"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="@+id/etSignInPwCheck"
+        app:layout_constraintStart_toStartOf="@+id/etSignInPwCheck"
+        app:layout_constraintTop_toBottomOf="@+id/etSignInPwCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
